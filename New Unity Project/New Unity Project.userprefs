@@ -1,14 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\NGUI\Scripts\Interaction\TypewriterEffect.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\UIHandler_Main.cs">
     <Files>
-      <File FileName="Assets\NGUI\Examples\Scripts\Other\UISliderColors.cs" Line="8" Column="14" />
-      <File FileName="Assets\NGUI\Scripts\UI\UIViewport.cs" Line="18" Column="27" />
-      <File FileName="Assets\NGUI\Scripts\Interaction\LanguageSelection.cs" Line="1" Column="1" />
-      <File FileName="Assets\NGUI\Scripts\Interaction\UIButton.cs" Line="1" Column="1" />
-      <File FileName="Assets\NGUI\Scripts\Interaction\TypewriterEffect.cs" Line="1" Column="1" />
-      <File FileName="Assets\NGUI\Scripts\Interaction\UIButtonActivate.cs" Line="1" Column="1" />
-      <File FileName="Assets\NGUI\Scripts\Interaction\UIButtonKeys.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\UIHandler_Main.cs" Line="1" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
