@@ -1,0 +1,627 @@
+fileFormatVersion: 2
+guid: ee4773c748b0a8947ad20c64154d1ec5
+timeCreated: 1439917351
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ____portal_____sprites_by_lady2010-d5cu2wj_0
+    21300002: ____portal_____sprites_by_lady2010-d5cu2wj_1
+    21300004: ____portal_____sprites_by_lady2010-d5cu2wj_2
+    21300006: ____portal_____sprites_by_lady2010-d5cu2wj_3
+    21300008: ____portal_____sprites_by_lady2010-d5cu2wj_4
+    21300010: ____portal_____sprites_by_lady2010-d5cu2wj_5
+    21300012: ____portal_____sprites_by_lady2010-d5cu2wj_6
+    21300014: ____portal_____sprites_by_lady2010-d5cu2wj_7
+    21300016: ____portal_____sprites_by_lady2010-d5cu2wj_8
+    21300018: ____portal_____sprites_by_lady2010-d5cu2wj_9
+    21300020: ____portal_____sprites_by_lady2010-d5cu2wj_10
+    21300022: ____portal_____sprites_by_lady2010-d5cu2wj_11
+    21300024: ____portal_____sprites_by_lady2010-d5cu2wj_12
+    21300026: ____portal_____sprites_by_lady2010-d5cu2wj_13
+    21300028: ____portal_____sprites_by_lady2010-d5cu2wj_14
+    21300030: ____portal_____sprites_by_lady2010-d5cu2wj_15
+    21300032: ____portal_____sprites_by_lady2010-d5cu2wj_16
+    21300034: ____portal_____sprites_by_lady2010-d5cu2wj_17
+    21300036: ____portal_____sprites_by_lady2010-d5cu2wj_18
+    21300038: ____portal_____sprites_by_lady2010-d5cu2wj_19
+    21300040: ____portal_____sprites_by_lady2010-d5cu2wj_20
+    21300042: ____portal_____sprites_by_lady2010-d5cu2wj_21
+    21300044: ____portal_____sprites_by_lady2010-d5cu2wj_22
+    21300046: ____portal_____sprites_by_lady2010-d5cu2wj_23
+    21300048: ____portal_____sprites_by_lady2010-d5cu2wj_24
+    21300050: ____portal_____sprites_by_lady2010-d5cu2wj_25
+    21300052: ____portal_____sprites_by_lady2010-d5cu2wj_26
+    21300054: ____portal_____sprites_by_lady2010-d5cu2wj_27
+    21300056: ____portal_____sprites_by_lady2010-d5cu2wj_28
+    21300058: ____portal_____sprites_by_lady2010-d5cu2wj_29
+    21300060: ____portal_____sprites_by_lady2010-d5cu2wj_30
+    21300062: ____portal_____sprites_by_lady2010-d5cu2wj_31
+    21300064: ____portal_____sprites_by_lady2010-d5cu2wj_32
+    21300066: ____portal_____sprites_by_lady2010-d5cu2wj_33
+    21300068: ____portal_____sprites_by_lady2010-d5cu2wj_34
+    21300070: ____portal_____sprites_by_lady2010-d5cu2wj_35
+    21300072: ____portal_____sprites_by_lady2010-d5cu2wj_36
+    21300074: ____portal_____sprites_by_lady2010-d5cu2wj_37
+    21300076: ____portal_____sprites_by_lady2010-d5cu2wj_38
+    21300078: ____portal_____sprites_by_lady2010-d5cu2wj_39
+    21300080: ____portal_____sprites_by_lady2010-d5cu2wj_40
+    21300082: ____portal_____sprites_by_lady2010-d5cu2wj_41
+    21300084: ____portal_____sprites_by_lady2010-d5cu2wj_42
+    21300086: ____portal_____sprites_by_lady2010-d5cu2wj_43
+    21300088: ____portal_____sprites_by_lady2010-d5cu2wj_44
+    21300090: ____portal_____sprites_by_lady2010-d5cu2wj_45
+    21300092: ____portal_____sprites_by_lady2010-d5cu2wj_46
+    21300094: ____portal_____sprites_by_lady2010-d5cu2wj_47
+    21300096: ____portal_____sprites_by_lady2010-d5cu2wj_48
+    21300098: ____portal_____sprites_by_lady2010-d5cu2wj_49
+    21300100: ____portal_____sprites_by_lady2010-d5cu2wj_50
+    21300102: ____portal_____sprites_by_lady2010-d5cu2wj_51
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 846
+        width: 85
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_1
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 838
+        width: 85
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_2
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 838
+        width: 81
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_3
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 778
+        width: 81
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_4
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 782
+        width: 85
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_5
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 778
+        width: 81
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_6
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 687
+        width: 65
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_7
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 683
+        width: 65
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_8
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 683
+        width: 65
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_9
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 639
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_10
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 218
+        width: 74
+        height: 227
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_11
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 619
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_12
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 623
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_13
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 560
+        width: 109
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_14
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 512
+        width: 68
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_15
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 603
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_16
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 568
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_17
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 540
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_18
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 544
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_19
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 548
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_20
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 480
+        width: 109
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_21
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 436
+        width: 69
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_22
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 528
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_23
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 218
+        width: 73
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_24
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 115
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_25
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 115
+        width: 9
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_26
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 115
+        width: 9
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_27
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 103
+        width: 17
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_28
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 115
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_29
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 103
+        width: 17
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_30
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 115
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_31
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 115
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_32
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 115
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_33
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 103
+        width: 69
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_34
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 115
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_35
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 115
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_36
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 115
+        width: 33
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_37
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 115
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_38
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 39
+        width: 37
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_39
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 39
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_40
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 39
+        width: 41
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_41
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 39
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_42
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 39
+        width: 9
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_43
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 27
+        width: 17
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_44
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 39
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_45
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 27
+        width: 18
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_46
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 39
+        width: 45
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_47
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 39
+        width: 33
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_48
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 39
+        width: 9
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_49
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 39
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_50
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 39
+        width: 29
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: ____portal_____sprites_by_lady2010-d5cu2wj_51
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 39
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
