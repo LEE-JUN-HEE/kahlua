@@ -20,6 +20,7 @@ public class CObj
         LiftDonw,
         LiftUP,
     }
+
     public enum BuildType
     {
         square = 0,
@@ -45,7 +46,7 @@ public class CObj
         Debug.Log(node.ChildNodes[0].InnerText);
         tType = (TiledType)(int.Parse(node.ChildNodes[0].InnerText));
         mType = (MoveType)(int.Parse(node.ChildNodes[1].InnerText));
-        tilt = int.Parse(node.ChildNodes[2].InnerText);
+        tilt = float.Parse(node.ChildNodes[2].InnerText);
 
         Splitstr = node.ChildNodes[3].InnerText.Split(',');
         LeftBot = new Vector2(int.Parse(Splitstr[0]), int.Parse(Splitstr[1]));

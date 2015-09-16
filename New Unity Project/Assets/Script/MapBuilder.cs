@@ -35,9 +35,9 @@ public class MapBuilder : MonoBehaviour {
         
         for (int i = 0; i < Object_g.ChildNodes.Count; i++)
         {
-            CObj_Build temp = new CObj_Build();
+            CObj_Get temp = new CObj_Get();
             temp.SetData(Object_b.ChildNodes[i]);
-            obj_b_list.Add(temp);//.SetData(Object_b.ChildNodes[i]));
+            obj_g_list.Add(temp);//.SetData(Object_b.ChildNodes[i]));
         }
 
         GameObject[] obj_b_pool = GameObject.FindGameObjectsWithTag("Obj_Build");
@@ -48,6 +48,11 @@ public class MapBuilder : MonoBehaviour {
         {
             obj_b_pool[i].GetComponent<IT_Obj_Build>().SetData(obj_b_list[i]);
         }
+
+        //for (int i = 0; i < obj_g_list.Count; i++)
+        //{
+        //    obj_g_pool[i].GetComponent<IT_Obj_Get>().SetData(obj_g_list[i]);
+        //}
 
     }
 }
