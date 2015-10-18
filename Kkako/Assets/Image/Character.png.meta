@@ -1,10 +1,15 @@
 fileFormatVersion: 2
-guid: 3511d57875fc22a469e269f5dda2c174
-timeCreated: 1440211880
+guid: b69e9b9ad3f47ba46add242a842c848b
+timeCreated: 1445157147
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Character_0
+    21300000: "\uC2A4\uD504\uB77C\uC774\uD2B8_png_0"
+    21300002: "\uC2A4\uD504\uB77C\uC774\uD2B8_png_1"
+    21300004: "\uC2A4\uD504\uB77C\uC774\uD2B8_png_2"
+    21300006: "\uC2A4\uD504\uB77C\uC774\uD2B8_png_3"
+    21300008: "\uC2A4\uD504\uB77C\uC774\uD2B8_png_4"
+    21300010: "\uC2A4\uD504\uB77C\uC774\uD2B8_png_5"
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -28,7 +33,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 512
+  maxTextureSize: 2048
   textureSettings:
     filterMode: -1
     aniso: 16
@@ -41,24 +46,74 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 9
-  spritePivot: {x: .5, y: .312999994}
-  spriteBorder: {x: 11, y: 80, z: 28, w: 92}
-  spritePixelsToUnits: 100
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: Character_0
+    - name: "\uC2A4\uD504\uB77C\uC774\uD2B8_png_0"
       rect:
         serializedVersion: 2
-        x: 9
-        y: 69
-        width: 222
-        height: 103
-      alignment: 7
-      pivot: {x: .5, y: 0}
+        x: 21
+        y: 44
+        width: 329
+        height: 347
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "\uC2A4\uD504\uB77C\uC774\uD2B8_png_1"
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 7
+        width: 247
+        height: 387
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "\uC2A4\uD504\uB77C\uC774\uD2B8_png_2"
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 9
+        width: 254
+        height: 379
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "\uC2A4\uD504\uB77C\uC774\uD2B8_png_3"
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 44
+        width: 329
+        height: 343
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "\uC2A4\uD504\uB77C\uC774\uD2B8_png_4"
+      rect:
+        serializedVersion: 2
+        x: 1650
+        y: 9
+        width: 255
+        height: 379
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: "\uC2A4\uD504\uB77C\uC774\uD2B8_png_5"
+      rect:
+        serializedVersion: 2
+        x: 2059
+        y: 7
+        width: 248
+        height: 387
+      alignment: 0
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
