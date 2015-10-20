@@ -209,18 +209,19 @@
     <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
-    <Compile Include="Assets\Script\CObj.cs" />
-    <Compile Include="Assets\Script\CObj_Build.cs" />
-    <Compile Include="Assets\Script\CObj_Get.cs" />
-    <Compile Include="Assets\Script\Common.cs" />
+    <Compile Include="Assets\Script\Core\MapBuilder.cs" />
+    <Compile Include="Assets\Script\Data\CObj.cs" />
+    <Compile Include="Assets\Script\Data\CObj_Build.cs" />
+    <Compile Include="Assets\Script\Data\CObj_Get.cs" />
+    <Compile Include="Assets\Script\Data\Common.cs" />
     <Compile Include="Assets\Script\DrawingPortal.cs" />
-    <Compile Include="Assets\Script\IT_Obj_Build.cs" />
-    <Compile Include="Assets\Script\IT_Obj_Get.cs" />
-    <Compile Include="Assets\Script\MapBuilder.cs" />
     <Compile Include="Assets\Script\Move.cs" />
     <Compile Include="Assets\Script\PortalFunction.cs" />
+    <Compile Include="Assets\Script\Test\TestTool.cs" />
     <Compile Include="Assets\Script\TimeSleep.cs" />
-    <Compile Include="Assets\Script\UIHandler_Main.cs" />
+    <Compile Include="Assets\Script\UI\IT_Obj_Build.cs" />
+    <Compile Include="Assets\Script\UI\IT_Obj_Get.cs" />
+    <Compile Include="Assets\Script\UI\UIHandler_Main.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
@@ -264,6 +265,7 @@
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed.shader" />
+    <None Include="Assets\testmap.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2013\UnityVS.CSharp.targets" />
 </Project>
