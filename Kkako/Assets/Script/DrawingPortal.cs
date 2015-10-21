@@ -10,16 +10,16 @@ public class DrawingPortal : MonoBehaviour {
 	private bool blue;
 //	private bool isGameOver;
 //	private int dragOrder;
-	private List<Vector3> pointsList;
-	private Vector3 mousePos;
-	private Vector3 portalPosition;
+	private List<Vector2> pointsList;
+	private Vector2 mousePos;
+	private Vector2 portalPosition;
 	private string portalColor;
 
 	struct portalPos
 	{
-		public Vector3 Pos1;
-		public Vector3 Pos2;
-		public Vector3 Pos;
+		public Vector2 Pos1;
+		public Vector2 Pos2;
+		public Vector2 Pos;
 	};
 
 	private enum Portal {orange, blue};
@@ -36,8 +36,8 @@ public class DrawingPortal : MonoBehaviour {
 		orange = true;
 		blue = false;
 //		isGameOver = false;
-		pointsList = new List<Vector3>();
-		portalPosition = new Vector3();
+		pointsList = new List<Vector2>();
+		portalPosition = new Vector2();
 //		dragOrder= 0;
 		portalColor = "";
 	}
@@ -67,7 +67,7 @@ public class DrawingPortal : MonoBehaviour {
 			line.SetVertexCount(0);
 			pointsList.RemoveRange(0,pointsList.Count);
 
-//			CreatePortal(portalColor,portalPosition);//포탈 생성
+			CreatePortal(portalColor,portalPosition);//포탈 생성
 
 
 		}
@@ -76,41 +76,44 @@ public class DrawingPortal : MonoBehaviour {
 		{
 			mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 //			mousePos = NGUITools.FindCameraForLayer(11).ScreenToWorldPoint(Input.mousePosition);
-			mousePos.z=0;
 			
 			if (!pointsList.Contains (mousePos)) 
 			{
 				pointsList.Add (mousePos);
 				line.SetVertexCount (pointsList.Count);
-				line.SetPosition (pointsList.Count - 1, (Vector3)pointsList[pointsList.Count - 1]);
+				line.SetPosition (pointsList.Count - 1, (Vector2)pointsList[pointsList.Count - 1]);
 			}
 
 //			StartCoroutine(this.SetPortalPosition());
 		}
 	}
 
-//	void CheckPortalOrder(bool Orange, bool Blue){
-//
-//		if(Orange)
-//		{
-//			portalColor = "orange";
-//		}
-//
-//		else if(Blue)
-//		{
-//			portalColor = "blue";
-//		}	
-//	}
-//
-//	void SetPortalPosition(){
-//
-//		portalPos pPos;
-//		pPos.Pos1 = (Vector3)pointsList[0];
-//		pPos.Pos2 = (Vector3)pointsList[pointsList.Count-1];
-//		pPos.Pos = (Vector3)(pPos.Pos1 + pPos.Pos2)/2;
-//		portalPosition = new Vector3(pPos.Pos.x,pPos.Pos.y,-2.0f);
-//
-//	}
+	void CheckPortalOrder(bool Orange, bool Blue){
+
+		if(Orange)
+		{
+			portalColor = "orange";
+		}
+
+		else if(Blue)
+		{
+			portalColor = "blue";
+		}	
+	}
+
+	void SetPortalPosition(){
+
+		portalPos pPos;
+		pPos.Pos1 = (Vector2)pointsList[0];
+		pPos.Pos2 = (Vector2)pointsList[pointsList.Count-1];
+		pPos.Pos = (Vector2)(pPos.Pos1 + pPos.Pos2)/2;
+//		portalPosition = new Vector2(pPos.Pos.x,pPos.Pos.y,-2.0f);
+		portalPosition = new Vector2(pPos.Pos.x,pPos.Pos.y);
+	}
+	void CreatePortal(string pColor, Vector2 Pos){
+
+		portalPosition = new Vector2();
+	}
 
 //	IEnumerator SetPortalPosition(){
 //		while(isMousePressed)
@@ -138,14 +141,7 @@ public class DrawingPortal : MonoBehaviour {
 //		}
 //	}
 
-//	void CreatePortal(string pColor, Vector3 Pos){
-//	
-//		GameObject orangePortal = (GameObject)Instantiate(Resources.Load(pColor)
-//			                                                  ,Pos
-//			                                                  ,Quaternion.identity);
-//
-//		portalPosition = new Vector3();
-//	}
+
 
 //	bool DragFinish(bool check){
 //		if(dragOrder == 2)
