@@ -44,7 +44,7 @@ public class MapBuilder : MonoBehaviour {
                 int instiateCount = Object_b.ChildNodes.Count - obj_b_pool.Count;
                 for (int i = 0; i <= instiateCount; i++)
                 {
-                    obj_b_pool.Add((GameObject)Instantiate(obj_b_pool[0], new Vector3(0,0,0), new Quaternion(0,0,0,0)));
+                    obj_b_pool.Add((GameObject)Instantiate(obj_b_pool[0], obj_b_pool[0].transform.position, Quaternion.identity));
                 }
             }
 
@@ -89,6 +89,7 @@ public class MapBuilder : MonoBehaviour {
                 obj_g_pool[i].GetComponent<IT_Obj_Get>().SetData(obj_g_list[i]);
             }
         }
+        obj_b_pool.ForEach(x => Debug.Log(x.GetComponent<IT_Obj_Build>().transform.position));
         //pool보다 list가 클 경우 예외처리 해 줘야함
     }
 }

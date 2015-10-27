@@ -14,12 +14,25 @@ public class IT_Obj_Build : MonoBehaviour
     int height = 0;
     UISprite sp_Instant;
 
+    public Vector2 local;
+
+    void Start()
+    {
+        applydata(data);
+    }
+
+    void Update()
+    {
+    }
     public void SetData(CObj_Build setdata)
     {
         data = setdata;
+    }
 
+    void applydata(CObj_Build _data)
+    {
         //모양
-        switch (data.BType)
+        switch (_data.BType)
         {
             case CObj.BuildType.square:
                 sp_square.gameObject.SetActive(true);
@@ -42,18 +55,12 @@ public class IT_Obj_Build : MonoBehaviour
                 sp_Instant = sp_tri;
                 break;
         }
-        
-        //위치
-        transform.Translate(data.LeftBot);
-
-        //기울기
-        transform.Rotate(new Vector3(0, 0, data.tilt));
 
         //반복타입
-        width = (int)(data.RightTop.x - data.LeftBot.x);
-        height = (int)(data.RightTop.y - data.LeftBot.y);
+        width = (int)(_data.RightTop.x - _data.LeftBot.x);
+        height = (int)(_data.RightTop.y - _data.LeftBot.y);
 
-        switch(data.tType)
+        switch (_data.tType)
         {
             //case CObj.TiledType.none:
             //    wd_this.width = (int)width;
@@ -80,6 +87,13 @@ public class IT_Obj_Build : MonoBehaviour
                 wd_this.height = (int)height;
                 break;
         }
+
+        //위치
+        gameObject.transform.localPosition = (Vector3)_data.LeftBot;
+
+        //기울기
+        transform.Rotate(new Vector3(0, 0, _data.tilt));
+
     }
 
     void tileCalculate(CObj.TiledType type)
