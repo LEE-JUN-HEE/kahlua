@@ -12,13 +12,13 @@ public class PortalFunction : MonoBehaviour {
 		parent = GameObject.Find(own.parent.name).GetComponent<Transform>();
 		Debug.Log (parent);
 
-		if(own.name=="orange")
+		if(own.name=="Orange_N")
 		{
 			if (coll.gameObject.layer == 11) 
 			{
 				Debug.Log("hit");
-				pair = parent.FindChild("blue").GetComponent<Transform>();
-				Vector2 movePosition = pair.position;
+				pair = parent.FindChild("Blue_N").GetComponent<Transform>();
+				Vector2 movePosition = new Vector2(pair.position.x+0.8f,pair.position.y);
 				coll.transform.position = movePosition;
 			}
 		}

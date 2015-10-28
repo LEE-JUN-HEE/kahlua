@@ -11,9 +11,12 @@ public class DrawingPortal : MonoBehaviour {
 //	private bool isGameOver;
 //	private int dragOrder;
 	private List<Vector2> pointsList;
+	private List<Vector2> portalPoint;
 	private Vector2 mousePos;
 	private Vector2 portalPosition;
+	private Vector2 localPos;
 	private string portalColor;
+	private Transform tr;
 
 	struct portalPos
 	{
@@ -28,8 +31,9 @@ public class DrawingPortal : MonoBehaviour {
 	void Awake(){
 		line = gameObject.AddComponent<LineRenderer>();
 		line.material =  new Material(Shader.Find("Sprites/Default"));
+		line.material.renderQueue = 3500;
 		line.SetVertexCount(0);
-		line.SetWidth(0.1f,0.1f);
+		line.SetWidth(0.05f,0.05f);
 		line.SetColors(Color.white, Color.white);
 		line.useWorldSpace = true;	
 		isMousePressed = false;
@@ -37,9 +41,11 @@ public class DrawingPortal : MonoBehaviour {
 		blue = false;
 //		isGameOver = false;
 		pointsList = new List<Vector2>();
+		portalPoint = new List<Vector2>();
 		portalPosition = new Vector2();
 //		dragOrder= 0;
 		portalColor = "";
+		tr = GameObject.Find("DrawingArea").GetComponent<Transform>();
 	}
 		
 	void FixedUpdate () {
@@ -51,8 +57,8 @@ public class DrawingPortal : MonoBehaviour {
 		if(Input.GetMouseButtonDown(0))
 		{
 			isMousePressed = true;
-			line.SetColors(Color.white, Color.white);
 
+			line.SetColors(Color.white, Color.white);
 		}
 
 		else if(Input.GetMouseButtonUp(0))
@@ -62,29 +68,43 @@ public class DrawingPortal : MonoBehaviour {
 //			orange = !orange;
 //			blue = !blue;	//포탈순서 정함.
 
-//			SetPortalPosition();
+			Debug.Log(portalPoint.Count);
+
+			SetPortalPosition();
 
 			line.SetVertexCount(0);
-			pointsList.RemoveRange(0,pointsList.Count);
 
-			CreatePortal(portalColor,portalPosition);//포탈 생성
+			pointsList.Clear();
+			portalPoint.Clear();
 
+			Debug.Log(portalPosition);
 
+			CreatePortal(portalPosition);
+
+//			CreatePortal(portalColor,portalPosition);//포탈 생성
 		}
 
 		if(isMousePressed)
 		{
+//			Vector2 preMousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
 			mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+//			mousePos = Camera.main.ScreenToViewportPoint(Input.mousePosition);
+
+			localPos = NGUIMath.WorldToLocalPoint(mousePos,Camera.main,Camera.main,tr);
+
+//			Debug.Log (localPos);
+
+//			mousePos = Camera.main.ScreenToViewportPoint(Input.mousePosition);
 //			mousePos = NGUITools.FindCameraForLayer(11).ScreenToWorldPoint(Input.mousePosition);
 			
 			if (!pointsList.Contains (mousePos)) 
-			{
+			{	
 				pointsList.Add (mousePos);
+				portalPoint.Add(localPos);
 				line.SetVertexCount (pointsList.Count);
 				line.SetPosition (pointsList.Count - 1, (Vector2)pointsList[pointsList.Count - 1]);
 			}
-
-//			StartCoroutine(this.SetPortalPosition());
 		}
 	}
 
@@ -102,17 +122,37 @@ public class DrawingPortal : MonoBehaviour {
 	}
 
 	void SetPortalPosition(){
-
+		
 		portalPos pPos;
-		pPos.Pos1 = (Vector2)pointsList[0];
-		pPos.Pos2 = (Vector2)pointsList[pointsList.Count-1];
+		pPos.Pos1 = (Vector2)portalPoint[1];
+		pPos.Pos2 = (Vector2)portalPoint[portalPoint.Count-1];
 		pPos.Pos = (Vector2)(pPos.Pos1 + pPos.Pos2)/2;
 //		portalPosition = new Vector2(pPos.Pos.x,pPos.Pos.y,-2.0f);
 		portalPosition = new Vector2(pPos.Pos.x,pPos.Pos.y);
 	}
-	void CreatePortal(string pColor, Vector2 Pos){
 
-		portalPosition = new Vector2();
+//	void SetPortalPosition(){
+//
+//		portalPos pPos;
+//		pPos.Pos1 = (Vector2)pointsList[0];
+//		pPos.Pos2 = (Vector2)pointsList[pointsList.Count-1];
+//		pPos.Pos = (Vector2)(pPos.Pos1 + pPos.Pos2)/2;
+////		portalPosition = new Vector2(pPos.Pos.x,pPos.Pos.y,-2.0f);
+//		portalPosition = new Vector2(pPos.Pos.x,pPos.Pos.y);
+//	}
+
+//	void ConvertToLocalPos(){
+//		Transform tr = GameObject.Find("DrawingArea").GetComponent<Transform>();
+//		tr.localPosition = portalPosition;
+//	}
+
+	void CreatePortal(Vector2 Pos){
+		GameObject portal = GameObject.Find("Portal_0");
+
+		Debug.Log(portal.name);
+
+		portal.GetComponent<Transform>().FindChild("Orange_N").transform.localPosition = Pos;
+//		portal.GetComponent<Transform>().transform.localPosition = Pos;
 	}
 
 //	IEnumerator SetPortalPosition(){
