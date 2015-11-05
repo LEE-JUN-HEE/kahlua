@@ -18,6 +18,8 @@ public class DrawingPortal : MonoBehaviour {
 	private string portalColor;
 	private Transform tr;
 
+	public GameObject particle;
+
 	struct portalPos
 	{
 		public Vector2 Pos1;
@@ -31,7 +33,7 @@ public class DrawingPortal : MonoBehaviour {
 	void Awake(){
 		line = gameObject.AddComponent<LineRenderer>();
 		line.material =  new Material(Shader.Find("Sprites/Default"));
-		line.material.renderQueue = 3500;
+		line.material.renderQueue = 4000;
 		line.SetVertexCount(0);
 		line.SetWidth(0.05f,0.05f);
 		line.SetColors(Color.white, Color.white);
@@ -56,6 +58,12 @@ public class DrawingPortal : MonoBehaviour {
 
 		if(Input.GetMouseButtonDown(0))
 		{
+			GameObject obj = Instantiate(particle,mousePos,Quaternion.identity) as GameObject;
+
+			obj.name = "mouseFollower";
+
+			obj.GetComponent<ParticleSystemRenderer>().material.renderQueue = 3500;
+
 			isMousePressed = true;
 
 			line.SetColors(Color.white, Color.white);
@@ -64,6 +72,9 @@ public class DrawingPortal : MonoBehaviour {
 		else if(Input.GetMouseButtonUp(0))
 		{
 			isMousePressed = false;
+
+			Destroy(GameObject.Find("mouseFollower"));
+
 
 //			orange = !orange;
 //			blue = !blue;	//포탈순서 정함.
@@ -89,6 +100,9 @@ public class DrawingPortal : MonoBehaviour {
 //			Vector2 preMousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
 			mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+			GameObject.Find("mouseFollower").transform.position = mousePos;
+
 //			mousePos = Camera.main.ScreenToViewportPoint(Input.mousePosition);
 
 			localPos = NGUIMath.WorldToLocalPoint(mousePos,Camera.main,Camera.main,tr);

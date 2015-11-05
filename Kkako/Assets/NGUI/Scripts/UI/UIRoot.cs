@@ -286,7 +286,14 @@ public class UIRoot : MonoBehaviour
 					!(Mathf.Abs(ls.y - size) <= float.Epsilon) ||
 					!(Mathf.Abs(ls.z - size) <= float.Epsilon))
 				{
-					mTrans.localScale = new Vector3(size, size, size);
+					float x_value = (NGUITools.screenSize.x/1920f);
+					float temp_value = (1080f*x_value);
+					float y_value = NGUITools.screenSize.y/temp_value;
+
+					mTrans.localScale = new Vector3(size,size*y_value,size);
+
+//					mTrans.localScale = new Vector3(size, size, size);
+
 					if (updateAnchors) BroadcastMessage("UpdateAnchors");
 				}
 			}

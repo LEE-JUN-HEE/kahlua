@@ -18,7 +18,7 @@ public class PortalFunction : MonoBehaviour {
 			{
 				Debug.Log("hit");
 				pair = parent.FindChild("Blue_N").GetComponent<Transform>();
-				Vector2 movePosition = new Vector2(pair.position.x+0.8f,pair.position.y);
+				Vector2 movePosition = new Vector2(pair.position.x,pair.position.y);
 				coll.transform.position = movePosition;
 			}
 		}
