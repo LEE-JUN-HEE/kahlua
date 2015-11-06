@@ -5,14 +5,14 @@ public class Move : MonoBehaviour {
 	
 	public float speed;
 	public float upPower;
-	public static Move instance;
+	public static Move charMove;
 
 	private Transform tr;
 
 	private Animator anim;
 
 	void Awake(){
-		instance = this;
+		charMove = this;
 		tr = this.gameObject.GetComponent<Transform>();
 
 		anim = GetComponent<Animator>();

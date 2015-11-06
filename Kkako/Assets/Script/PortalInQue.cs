@@ -9,7 +9,7 @@ public class PortalInQue : MonoBehaviour {
 
 	public GameObject portal;
 	public GameObject parent;
-	public GameObject Ancor;
+//	public GameObject Ancor;
 //	public static PortalInQue instance;
 
 	public int portalMax = 1;
@@ -29,7 +29,7 @@ public class PortalInQue : MonoBehaviour {
 			GameObject obj = NGUITools.AddChild(parent,portal);
 			obj.name = "Portal_"+i;
 //			obj.transform.localPosition = new Vector2(0.0f,1600.0f);
-			obj.GetComponent<UIWidget>().SetAnchor(Ancor);
+//			obj.GetComponent<UIWidget>().SetAnchor(Ancor);
 
 //			obj.transform.SetParent(parent);
 //			portalPool.Enqueue (obj);

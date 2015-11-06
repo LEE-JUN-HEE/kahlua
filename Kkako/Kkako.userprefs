@@ -1,10 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\DrawingPortal.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\TouchEvent.cs">
     <Files>
-      <File FileName="Assets\Script\DrawingPortal.cs" Line="21" Column="1" />
-      <File FileName="Assets\ParticleFollower.cs" Line="9" Column="48" />
-      <File FileName="Assets\Script\CameraFollow.cs" Line="18" Column="3" />
+      <File FileName="Assets\Script\TouchEvent.cs" Line="103" Column="29" />
+      <File FileName="Assets\Script\DrawingPortal.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\ParticleFollower.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\PortalInQue.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\PortalFunction.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\Move.cs" Line="42" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
