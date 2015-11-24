@@ -3,7 +3,7 @@
     <Object>
       <tile>1</tile>
       <move>0</move>
-      <tilt>30</tilt>
+      <tilt>0</tilt>
       <LB>0,0</LB>
       <RT>40,400</RT>
       <shape>0</shape>
@@ -11,7 +11,7 @@
     <Object>
       <tile>1</tile>
       <move>0</move>
-      <tilt>30</tilt>
+      <tilt>0</tilt>
       <LB>0,480</LB>
       <RT>40,680</RT>
       <shape>0</shape>
@@ -19,7 +19,7 @@
     <Object>
       <tile>1</tile>
       <move>0</move>
-      <tilt>30</tilt>
+      <tilt>0</tilt>
       <LB>0,760</LB>
       <RT>40,840</RT>
       <shape>0</shape>
@@ -27,7 +27,7 @@
     <Object>
       <tile>1</tile>
       <move>0</move>
-      <tilt>30</tilt>
+      <tilt>0</tilt>
       <LB>0,920</LB>
       <RT>40,1020</RT>
       <shape>0</shape>
@@ -35,7 +35,7 @@
     <Object>
       <tile>1</tile>
       <move>0</move>
-      <tilt>30</tilt>
+      <tilt>0</tilt>
       <LB>0,1080</LB>
       <RT>40,1160</RT>
       <shape>0</shape>
@@ -43,7 +43,7 @@
     <Object>
       <tile>1</tile>
       <move>0</move>
-      <tilt>30</tilt>
+      <tilt>0</tilt>
       <LB>0,1240</LB>
       <RT>40,1320</RT>
       <shape>0</shape>
@@ -51,7 +51,7 @@
     <Object>
       <tile>1</tile>
       <move>0</move>
-      <tilt>30</tilt>
+      <tilt>0</tilt>
       <LB>0,1400</LB>
       <RT>40,1480</RT>
       <shape>0</shape>
@@ -59,7 +59,7 @@
     <Object>
       <tile>1</tile>
       <move>0</move>
-      <tilt>30</tilt>
+      <tilt>0</tilt>
       <LB>0,1620</LB>
       <RT>40,1700</RT>
       <shape>0</shape>
@@ -67,7 +67,7 @@
     <Object>
       <tile>1</tile>
       <move>0</move>
-      <tilt>30</tilt>
+      <tilt>0</tilt>
       <LB>0,1900</LB>
       <RT>40,2100</RT>
       <shape>0</shape>
@@ -75,10 +75,52 @@
     <Object>
       <tile>1</tile>
       <move>0</move>
-      <tilt>30</tilt>
+      <tilt>0</tilt>
       <LB>200,2000</LB>
       <RT>240,3000</RT>
       <shape>0</shape>
     </Object>
   </Object_B>
+  <Object_G>
+	<Object>
+      <tile>1</tile>
+      <move>0</move>
+      <tilt>30</tilt>
+      <LB>200,2000</LB>
+      <RT>240,3000</RT>
+      <shape>0</shape>
+    </Object>
+	<Object>
+      <tile>1</tile>
+      <move>0</move>
+      <tilt>30</tilt>
+      <LB>200,2000</LB>
+      <RT>240,3000</RT>
+      <shape>0</shape>
+    </Object>
+	<Object>
+      <tile>1</tile>
+      <move>0</move>
+      <tilt>30</tilt>
+      <LB>200,2000</LB>
+      <RT>240,3000</RT>
+      <shape>0</shape>
+    </Object>
+	<Object>
+      <tile>1</tile>
+      <move>0</move>
+      <tilt>30</tilt>
+      <LB>200,2000</LB>
+      <RT>240,3000</RT>
+      <shape>0</shape>
+    </Object>
+	<Object>
+      <tile>1</tile>
+      <move>0</move>
+      <tilt>30</tilt>
+      <LB>200,2000</LB>
+      <RT>240,3000</RT>
+      <shape>0</shape>
+    </Object>
+  </Object_G>
 </Terrain>

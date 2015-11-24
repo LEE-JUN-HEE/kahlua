@@ -89,7 +89,7 @@ public class MapBuilder : MonoBehaviour {
                 obj_g_pool[i].GetComponent<IT_Obj_Get>().SetData(obj_g_list[i]);
             }
         }
-        obj_b_pool.ForEach(x => Debug.Log(x.GetComponent<IT_Obj_Build>().transform.position));
+        obj_g_pool.ForEach(x => Debug.Log(x.GetComponent<IT_Obj_Build>().transform.position));
         //pool보다 list가 클 경우 예외처리 해 줘야함
     }
 }

@@ -11,32 +11,32 @@ public class UIHandler_Main : MonoBehaviour {
 	}
 
 	///////////////
-	void OnClick_Start()
+	public void OnClick_Start()
+	{
+        Application.LoadLevel(1);
+	}
+
+    public void OnClick_Friend()
+	{
+
+	}
+
+    public void OnClick_MailBox()
 	{
 		
 	}
 
-	void OnClick_Friend()
-	{
-
-	}
-
-	void OnClick_MailBox()
+    public void OnClick_Stat()
 	{
 		
 	}
 
-	void OnClick_Stat()
+    public void OnClick_Skill()
 	{
 		
 	}
 
-	void OnClick_Skill()
-	{
-		
-	}
-
-	void OnClick_Costume()
+    public void OnClick_Costume()
 	{
 		
 	}
