@@ -215,22 +215,24 @@
     <Compile Include="Assets\NGUI\Scripts\UI\UITexture.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
-    <Compile Include="Assets\Script\BackGround.cs" />
-    <Compile Include="Assets\Script\CameraFollow.cs" />
     <Compile Include="Assets\Script\Core\MapBuilder.cs" />
     <Compile Include="Assets\Script\Data\CObj.cs" />
     <Compile Include="Assets\Script\Data\CObj_Build.cs" />
     <Compile Include="Assets\Script\Data\CObj_Get.cs" />
     <Compile Include="Assets\Script\Data\Common.cs" />
-    <Compile Include="Assets\Script\Move.cs" />
-    <Compile Include="Assets\Script\ParticleFollower.cs" />
-    <Compile Include="Assets\Script\PortalFunction.cs" />
+    <Compile Include="Assets\Script\Play\BackGround.cs" />
+    <Compile Include="Assets\Script\Play\CameraFollow.cs" />
+    <Compile Include="Assets\Script\Play\Move.cs" />
+    <Compile Include="Assets\Script\Play\ParticleFollower.cs" />
+    <Compile Include="Assets\Script\Play\PortalFunction.cs" />
+    <Compile Include="Assets\Script\Play\TouchEvent.cs" />
+    <Compile Include="Assets\Script\Play\TouchEvent_mod.cs" />
+    <Compile Include="Assets\Script\Play\newPortalFunction.cs" />
     <Compile Include="Assets\Script\Test\TestTool.cs" />
-    <Compile Include="Assets\Script\TouchEvent.cs" />
     <Compile Include="Assets\Script\UI\IT_Obj_Build.cs" />
     <Compile Include="Assets\Script\UI\IT_Obj_Get.cs" />
+    <Compile Include="Assets\Script\UI\In_TestHandler.cs" />
     <Compile Include="Assets\Script\UI\UIHandler_Main.cs" />
-    <Compile Include="Assets\Script\newPortalFunction.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />

@@ -31,18 +31,15 @@ public class MapBuilder : MonoBehaviour {
         XmlNode Object_b = parser.FirstChild.ChildNodes[0];
         XmlNode Object_g = parser.FirstChild.ChildNodes[1];
 
-        GameObject[] temp_b = GameObject.FindGameObjectsWithTag("Obj_Build");
-        GameObject[] temp_g = GameObject.FindGameObjectsWithTag("Obj_Get");
-
-        List<GameObject> obj_b_pool = new List<GameObject>(temp_b);
-        List<GameObject> obj_g_pool = new List<GameObject>(temp_g);
+        List<GameObject> obj_b_pool = new List<GameObject>(GameObject.FindGameObjectsWithTag("Obj_Build"));
+        List<GameObject> obj_g_pool = new List<GameObject>(GameObject.FindGameObjectsWithTag("Obj_Get"));
 
         if (Object_b != null)
         {
             if (obj_b_pool.Count < Object_b.ChildNodes.Count)
             {
                 int instiateCount = Object_b.ChildNodes.Count - obj_b_pool.Count;
-                for (int i = 0; i <= instiateCount; i++)
+                for (int i = 0; i < instiateCount; i++)
                 {
                     obj_b_pool.Add((GameObject)Instantiate(obj_b_pool[0], obj_b_pool[0].transform.position, Quaternion.identity));
                 }
@@ -80,7 +77,7 @@ public class MapBuilder : MonoBehaviour {
             if (obj_g_pool.Count < obj_g_list.Count)
             {
                 int instiateCount = obj_g_list.Count - obj_g_pool.Count;
-                for (int i = 0; i <= instiateCount; i++)
+                for (int i = 0; i < instiateCount; i++)
                     obj_g_pool.Add((GameObject)Instantiate(obj_g_pool[0], obj_g_pool[0].transform.position, obj_g_pool[0].transform.rotation));
             }
 
@@ -89,7 +86,6 @@ public class MapBuilder : MonoBehaviour {
                 obj_g_pool[i].GetComponent<IT_Obj_Get>().SetData(obj_g_list[i]);
             }
         }
-        obj_g_pool.ForEach(x => Debug.Log(x.GetComponent<IT_Obj_Build>().transform.position));
         //pool보다 list가 클 경우 예외처리 해 줘야함
     }
 }

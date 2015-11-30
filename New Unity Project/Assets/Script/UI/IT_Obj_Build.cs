@@ -24,6 +24,7 @@ public class IT_Obj_Build : MonoBehaviour
     void Update()
     {
     }
+
     public void SetData(CObj_Build setdata)
     {
         data = setdata;
