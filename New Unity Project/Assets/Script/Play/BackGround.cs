@@ -15,7 +15,7 @@ public class BackGround : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 //		Debug.Log(ratio);
-		Vector2 pos = Camera.main.transform.position; //카메라의 위치값을 저장.
+		Vector2 pos = UICamera.FindCameraForLayer(8).transform.position;
 		transform.position = new Vector2(originPos.x+pos.x*ratio,originPos.y+pos.y*ratio); //뒷배경이 원근비율에 따라 카메라가 이동하면 비율로 인해 조금씩 이동하며 따라다님.
 	}
 }

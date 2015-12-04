@@ -10,8 +10,8 @@ public class TouchEvent_mod : MonoBehaviour {
 
 	public Transform targetTr; //타겟 NGUI 트랜스폼.
 
-	public bool isPressed; //마우스가 눌러졌는지 호가인
-	private bool createPortal; //마우스 드래그시 새로운 포탈을 그리는 순서인지 블루포탈을 그리는 순서인지 구분. 
+	public bool isPressed; //마우스가 눌러졌는지 확인.
+	private bool createP; //마우스 드래그시 새로운 포탈을 그리는 순서인지 블루포탈을 그리는 순서인지 구분. 
 	private bool drawingOver;
 
 	private List<Vector2> pointList; //마우스의 NGUI로컬 좌표값을 저장하는 어레이.
@@ -28,12 +28,8 @@ public class TouchEvent_mod : MonoBehaviour {
 
 	private Animator anim; //게임 케릭터 애니메이션을 불러와 isPressed = true 상태에서 느려지게 만듬.
 
-	public float slowSpeed; //케릭터 이동속도를 얼마로 바꿀껀지.
-	public float backSpeed; //케릭터 이동속도가 다시 얼마로 바뀌는지.
-	
 //	public UIEventTrigger current;
-
-	public static TouchEvent_mod tEvent; //다른 스크립트에서 이 스크립트 접근.
+	
 	public GameObject blackOut;
 
 	struct portalPosition // pointList의 첫번째 값과 마지막 값을 가져와 portalPos값 계산할 벡터값들.
@@ -46,19 +42,18 @@ public class TouchEvent_mod : MonoBehaviour {
 
 	void Start(){
 		isPressed = false; 
-		createPortal = false;
+		createP = false;
 //		createIsEnd = false;
 		pointList = new List<Vector2>();
 		pName = "";
-		tEvent = this;
 		pCurrent = 1;
-		anim = GameObject.Find("Player").GetComponent<Animator>();
 		drawingOver =false;
+		anim = GameObject.Find("Player").GetComponent<Animator>();
 	}
 
-	void FixedUpdate(){
+	void Update(){
 
-		Debug.Log("drawingover"+drawingOver+" "+"createP"+createPortal);
+		Debug.Log("drawingover"+drawingOver+" "+"createP"+createP);
 
 		if(isPressed) //마우스가 눌러진 상태에서.
 		{
@@ -73,10 +68,10 @@ public class TouchEvent_mod : MonoBehaviour {
 	}
 
 	// Use this for initialization
-	public void Press () { //마우스가 눌리게 되면.
-
+	void OnDragStart () { //마우스가 눌리게 되면.
+		Debug.Log("Pressed");
 		blackOut.SetActive(true);
-		Move.charMove.speed = slowSpeed; //케릭터 이동속도를 바꿈.
+		ManagerOfGame.instance.charSpeed = ManagerOfGame.instance.charSlowSpeed; //케릭터 이동속도를 바꿈.
 		anim.SetFloat("slowMotion",0.5f); //케릭터의 애니메이션 속도 바꿈.
 		
 		isPressed = true;
@@ -86,14 +81,29 @@ public class TouchEvent_mod : MonoBehaviour {
 		obj.name = "mouseFollower"+pCurrent; //파티클의 이름을 정해주어 마우스 왼쪽버튼을 뗏을때 사라지게 만듬.
 	}
 
-	public void Realease(){
-
+	void OnDragEnd(){
+		Debug.Log("released");
 		isPressed = false;
 		Destroy(GameObject.Find(("mouseFollower"+pCurrent))); //파티클을 제거.
 
+		SetPortalPosition(pointList);
+		
+		if(createP) //포탈을 생성하는 순서라면.
+		{
+			if(parent.transform.childCount<=ManagerOfGame.instance.portalNum)
+			{
+				CreatePortal();
+				CreateIsOver();
+			}
+		}
+
+	}
+
+	void SetPortalPosition(List<Vector2> list)
+	{
 		portalPosition pPos; // 저장해둔 pointList 내의 값들을 이용하여 포탈을 생성할 위치를 구함.
-		pPos.Pos1 = (Vector2)pointList[1]; //첫번째 값.
-		pPos.Pos2 = (Vector2)pointList[pointList.Count-1];//마지막 번째 값.
+		pPos.Pos1 = (Vector2)list[1]; //첫번째 값.
+		pPos.Pos2 = (Vector2)list[list.Count-1];//마지막 번째 값.
 		pPos.Pos = (Vector2)(pPos.Pos1 + pPos.Pos2)/2; //두 벡터의 가운데값.
 
 		if(!drawingOver)
@@ -104,28 +114,29 @@ public class TouchEvent_mod : MonoBehaviour {
 		else if(drawingOver)
 		{
 			OutportalPos = new Vector2(pPos.Pos.x,pPos.Pos.y); 
-			createPortal = true;
+			createP = true;
 		}
+		list.Clear(); //리스트내의 값들을 제거.
+	}
 
-		pointList.Clear(); //리스트내의 값들을 제거.
+	void CreatePortal(){
+		GameObject newPortal = NGUITools.AddChild(parent,portal); //부모 게임오브젝트에 포탈 오브젝트 추가
+		newPortal.name = "Portal_"+pCurrent;
+		pName = newPortal.name;
+		Transform first =  newPortal.transform.FindChild("InPortal"); //오렌지 포탈을 저장한 portalPos의 위치에서 생성.
+		Transform second = newPortal.transform.FindChild("OutPortal");
+		first.localPosition = InportalPos;
+		second.transform.localPosition = OutportalPos;
+		pName = "";
+		pCurrent ++;
+	}
 
-		if(createPortal) //포탈을 생성하는 순서라면.
-		{
-			GameObject newPortal = NGUITools.AddChild(parent,portal); //부모 게임오브젝트에 포탈 오브젝트 추가
-			newPortal.name = "Portal_"+pCurrent;
-			pName = newPortal.name;
-			Transform first =  newPortal.transform.FindChild("InPortal"); //오렌지 포탈을 저장한 portalPos의 위치에서 생성.
-			Transform second = newPortal.transform.FindChild("OutPortal");
-			first.localPosition = InportalPos;
-			second.transform.localPosition = OutportalPos;
-			createPortal = false; //포탈을 생성하는 순서가 아님을 알림.
-			pName = "";
-			pCurrent ++;
-			blackOut.SetActive(false);
-			createPortal = false;
-			drawingOver = false;
-			Move.charMove.speed = backSpeed; //케릭터 이동속도를 바꿈.
-			anim.SetFloat("slowMotion",1.0f); //케릭터의 애니메이션 속도 바꿈.
-		}
+	void CreateIsOver(){
+		blackOut.SetActive(false);
+		createP = false;
+		drawingOver = false;
+		
+		ManagerOfGame.instance.charSpeed = ManagerOfGame.instance.charOriginSpeed; //케릭터 이동속도를 바꿈.
+		anim.SetFloat("slowMotion",1.0f); //케릭터의 애니메이션 속도 바꿈.
 	}
 }

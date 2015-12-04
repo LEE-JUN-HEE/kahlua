@@ -15,7 +15,7 @@ public class newPortalFunction : MonoBehaviour {
 
 		Debug.Log("Hit");
 
-		if (coll.gameObject.tag == "Player") 
+		if (coll.gameObject.tag=="Player")
 		{
 			anim.SetTrigger("isClose");
 			Invoke("DestroyP",invokeTime);
