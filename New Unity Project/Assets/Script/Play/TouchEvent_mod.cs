@@ -31,7 +31,7 @@ public class TouchEvent_mod : MonoBehaviour {
 //	public UIEventTrigger current;
 	
 	public GameObject blackOut;
-
+	public Animator playerAnim;
 	struct portalPosition // pointList의 첫번째 값과 마지막 값을 가져와 portalPos값 계산할 벡터값들.
 	{
 		public Vector2 Pos1;
@@ -48,12 +48,11 @@ public class TouchEvent_mod : MonoBehaviour {
 		pName = "";
 		pCurrent = 1;
 		drawingOver =false;
-		anim = GameObject.Find("Player").GetComponent<Animator>();
 	}
 
 	void Update(){
 
-		Debug.Log("drawingover"+drawingOver+" "+"createP"+createP);
+//		Debug.Log("drawingover"+drawingOver+" "+"createP"+createP);
 
 		if(isPressed) //마우스가 눌러진 상태에서.
 		{
@@ -72,7 +71,7 @@ public class TouchEvent_mod : MonoBehaviour {
 		Debug.Log("Pressed");
 		blackOut.SetActive(true);
 		ManagerOfGame.instance.charSpeed = ManagerOfGame.instance.charSlowSpeed; //케릭터 이동속도를 바꿈.
-		anim.SetFloat("slowMotion",0.5f); //케릭터의 애니메이션 속도 바꿈.
+		playerAnim.SetFloat("slow_Motion",0.5f); //케릭터의 애니메이션 속도 바꿈.
 		
 		isPressed = true;
 
@@ -86,17 +85,20 @@ public class TouchEvent_mod : MonoBehaviour {
 		isPressed = false;
 		Destroy(GameObject.Find(("mouseFollower"+pCurrent))); //파티클을 제거.
 
-		SetPortalPosition(pointList);
-		
-		if(createP) //포탈을 생성하는 순서라면.
+		if(ManagerOfGame.instance.charMp>=0)
 		{
-			if(parent.transform.childCount<=ManagerOfGame.instance.portalNum)
+			SetPortalPosition(pointList);
+			
+			if(createP) //포탈을 생성하는 순서라면.
 			{
-				CreatePortal();
-				CreateIsOver();
+				if(parent.transform.childCount<=ManagerOfGame.instance.portalNum)
+				{
+					CreatePortal();
+					CreateIsOver();
+				}
 			}
 		}
-
+		else{return;}
 	}
 
 	void SetPortalPosition(List<Vector2> list)
@@ -137,6 +139,7 @@ public class TouchEvent_mod : MonoBehaviour {
 		drawingOver = false;
 		
 		ManagerOfGame.instance.charSpeed = ManagerOfGame.instance.charOriginSpeed; //케릭터 이동속도를 바꿈.
-		anim.SetFloat("slowMotion",1.0f); //케릭터의 애니메이션 속도 바꿈.
+		ManagerOfGame.instance.MpController();
+		playerAnim.SetFloat("slow_Motion",1.0f); //케릭터의 애니메이션 속도 바꿈.
 	}
 }

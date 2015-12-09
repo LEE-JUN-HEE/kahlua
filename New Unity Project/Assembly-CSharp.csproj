@@ -45,9 +45,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\CharacterMove.cs" />
-     <Compile Include="Assets\CheckDistance.cs" />
-     <Compile Include="Assets\ManagerOfGame.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs" />
      <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\UICursor.cs" />
@@ -190,6 +187,9 @@
      <Compile Include="Assets\Script\Data\Common.cs" />
      <Compile Include="Assets\Script\Play\BackGround.cs" />
      <Compile Include="Assets\Script\Play\CameraFollow.cs" />
+     <Compile Include="Assets\Script\Play\CharacterMove.cs" />
+     <Compile Include="Assets\Script\Play\GemCollision.cs" />
+     <Compile Include="Assets\Script\Play\ManagerOfGame.cs" />
      <Compile Include="Assets\Script\Play\Move.cs" />
      <Compile Include="Assets\Script\Play\ParticleFollower.cs" />
      <Compile Include="Assets\Script\Play\PortalFunction.cs" />

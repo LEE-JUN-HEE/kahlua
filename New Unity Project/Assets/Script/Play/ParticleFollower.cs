@@ -8,17 +8,14 @@ public class ParticleFollower : MonoBehaviour {
 	private Transform tr;
 	private Vector3 mousePos;
 
-	private bool isPressed;
-
 	void Start(){
 		ps = GetComponent<ParticleSystemRenderer>();
 		ps.material.renderQueue =3500;
 		tr = GetComponent<Transform>();
-		isPressed = false;
 	}
 
 	void Update(){
-		mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		mousePos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 		tr.position = mousePos;
 	}
 
